@@ -10,10 +10,17 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  title = 'Demo-Application';
-  titles = "New application initilisation"
-  ReturnUser = ()=>{
-return "AKHIL"
-  }
-  path:string = '../assets/img1.jpg'
+  title: string = 'Demo-Application';
+  titles: string = 'New application initilisation';
+  timer: string = new Date().toLocaleTimeString();
+  buttonhide:boolean = false
+
+  // timeid = setInterval(()=>{
+  //   this.timer  = new Date().toLocaleTimeString()
+  // },1000)
+
+  ReturnUser = () => {
+    return 'AI';
+  };
+  path: string = '../assets/img1.jpg';
 }
