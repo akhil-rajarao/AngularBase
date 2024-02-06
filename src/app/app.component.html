@@ -1,4 +1,8 @@
-<h1>Angular Project Initiaitions {{ReturnUser()}}</h1>
-<h1>Current Time {{timer}}</h1>
-search Images <input type="text"> <button [disabled]=buttonhide>Search</button>
-<img style="width: 30vw;" src={{path}} alt="imagesinsindekjn">
+<img style="width: 20vw" src="{{ path }}" alt="imagesinsindekjn" />
+ 
+<h1>Current Time {{ timer }}</h1>
+
+<input type="text" /> <button [disabled]="buttonhide">Search</button>
+
+<h1 [class]="isactive?'active':'inactive'">Class binding</h1>
+

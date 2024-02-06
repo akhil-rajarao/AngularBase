@@ -14,13 +14,12 @@ export class AppComponent {
   titles: string = 'New application initilisation';
   timer: string = new Date().toLocaleTimeString();
   buttonhide:boolean = false
+  isactive:boolean = true
 
   // timeid = setInterval(()=>{
   //   this.timer  = new Date().toLocaleTimeString()
   // },1000)
 
-  ReturnUser = () => {
-    return 'AI';
-  };
+
   path: string = '../assets/img1.jpg';
 }
