@@ -11,4 +11,9 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'Demo-Application';
+  titles = "New application initilisation"
+  ReturnUser = ()=>{
+return "AKHIL"
+  }
+  path:string = '../assets/img1.jpg'
 }
