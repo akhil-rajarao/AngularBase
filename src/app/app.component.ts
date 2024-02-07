@@ -13,13 +13,8 @@ export class AppComponent {
   title: string = 'Demo-Application';
   titles: string = 'New application initilisation';
   timer: string = new Date().toLocaleTimeString();
-  buttonhide:boolean = false
-  isactive:boolean = true
-
-  // timeid = setInterval(()=>{
-  //   this.timer  = new Date().toLocaleTimeString()
-  // },1000)
-
-
+  buttonhide: boolean = false;
+  isactive: boolean = true;
   path: string = '../assets/img1.jpg';
+  grass:boolean = false
 }

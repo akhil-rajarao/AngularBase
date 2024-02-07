@@ -1,8 +1,9 @@
 <img style="width: 20vw" src="{{ path }}" alt="imagesinsindekjn" />
- 
+
 <h1>Current Time {{ timer }}</h1>
 
 <input type="text" /> <button [disabled]="buttonhide">Search</button>
 
-<h1 [class]="isactive?'active':'inactive'">Class binding</h1>
-
+<h1 [class]="isactive ? 'active' : 'inactive'">Class binding</h1>
+<h1 style="color: rgb(36, 44, 29)">Style binding</h1>
+<h1 [style.color]="grass? 'green':'blue'">Property Binding</h1>
