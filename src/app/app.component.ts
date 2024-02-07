@@ -17,4 +17,19 @@ export class AppComponent {
   isactive: boolean = true;
   path: string = '../assets/img1.jpg';
   grass:boolean = false
+  counter :number = 0
+  name:any = "(input)=changeName($event)"
+  increment = ()=>{
+this.counter = this.counter + 1
+}
+decrement = ()=>{
+  this.counter = this.counter -= 1
+}
+
+onchangeFunction =(e:any)=>{
+ this.name = e.target.value
+}
+
+
+
 }

@@ -1,9 +1,19 @@
-<img style="width: 20vw" src="{{ path }}" alt="imagesinsindekjn" />
-
 <h1>Current Time {{ timer }}</h1>
 
 <input type="text" /> <button [disabled]="buttonhide">Search</button>
 
-<h1 [class]="isactive ? 'active' : 'inactive'">Class binding</h1>
-<h1 style="color: rgb(36, 44, 29)">Style binding</h1>
-<h1 [style.color]="grass? 'green':'blue'">Property Binding</h1>
+<h1 [class]="isactive ? 'active' : 'inactive'">
+  Class binding : [class]="isactive ? 'active' : 'inactive'"
+</h1>
+<h1 style="color: rgb(36, 44, 29)">
+  Style binding : style="color: rgb(36, 44, 29)"
+</h1>
+<h1 [style.color]="grass ? 'green' : 'blue'">
+  Property Binding : [style.color]="grass? 'green':'blue'"
+</h1>
+<button (click)="increment()">+</button>
+<button (click)="decrement()">-</button>
+<h2>Counter:{{ counter }}</h2>
+Name = <input type="text" on-input="onchangeFunction($event)" />
+<h3>{{ name }}</h3>
+<img style="width: 10vw" src="{{ path }}" alt="imagesinsindekjn" />
